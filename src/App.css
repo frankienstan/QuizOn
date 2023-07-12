@@ -1,0 +1,202 @@
+.startcard {
+  width: clamp(18.75rem, 1.9231rem + 67.3077vw, 62.5rem);
+}
+.category_heading {
+  text-align: center;
+  color: #0077ed;
+}
+.startcard h3 {
+  margin: 16px auto 10px;
+  text-align: center;
+}
+.instructions {
+  margin: 16px 20px;
+}
+
+.category_list {
+  display: flex;
+  /* margin: 20px 50px; */
+  flex-wrap: wrap;
+  row-gap: 14px;
+  column-gap: 20px;
+
+  height: 300px;
+  overflow-y: scroll;
+  background-color: #161618;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.category_list button {
+  padding: 4px 8px;
+  background-color: #252529;
+  border: 1px solid #3d3d3d;
+  color: rgb(255 255 245 / 86%);
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.category_list button:hover {
+}
+
+/* Chrome, Edge, and Safari */
+.category_list::-webkit-scrollbar {
+  width: 14px;
+}
+
+.category_list::-webkit-scrollbar-track {
+  border-bottom-right-radius: 14px;
+  border-top-right-radius: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* ----------------------------css loader ------------------------- */
+.custom-loader {
+  width: 80px;
+  height: 80px;
+  display: grid;
+  color: #0077ed;
+  background: conic-gradient(
+        from -153deg at right,
+        #0000,
+        currentColor 1deg 126deg,
+        #0000 127deg
+      )
+      calc(50% + 5px) 0 /10px 50%,
+    conic-gradient(
+        from 27deg at left,
+        #0000,
+        currentColor 1deg 126deg,
+        #0000 127deg
+      )
+      calc(50% - 5px) 100%/10px 50%,
+    linear-gradient(to top right, currentColor 50%, #0000 0%) calc(50% + 10px)
+      calc(50% - 10px) / 20px 20px,
+    linear-gradient(to bottom left, currentColor 50%, #0000 0%) calc(50% - 10px)
+      calc(50% + 10px) / 20px 20px;
+  background-repeat: no-repeat;
+  -webkit-mask: radial-gradient(circle 5px, #0000 90%, #000);
+  animation: sh6 1.5s infinite linear;
+}
+.custom-loader:before,
+.custom-loader:after {
+  content: "";
+  grid-area: 1/1;
+  background: inherit;
+  transform: rotate(60deg);
+}
+.custom-loader:after {
+  transform: rotate(120deg);
+}
+
+@keyframes sh6 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.question_card {
+  width: clamp(18.75rem, 1.9231rem + 67.3077vw, 62.5rem);
+  background-color: #161618;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.categoryname {
+  color: #0077ed;
+}
+.questionnum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.questionnum p {
+  color: #0077ed;
+}
+.question {
+  margin-top: 12px;
+}
+.options {
+  gap: 14px;
+  margin: 24px 0;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.options li {
+  list-style-position: inside;
+  list-style-type: none;
+  padding-left: 5px;
+}
+.answer-btn {
+  background-color: #fffffff8;
+  color: #1a1a1a;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 14px;
+  letter-spacing: 0.022em;
+  border: none;
+}
+.answer-btn.correct_ans {
+  background-color: #009e60;
+  color: rgba(255, 255, 255, 0.893);
+}
+.answer-btn.incorrect_ans {
+  background-color: rgba(241, 55, 55, 0.95);
+  color: white;
+}
+
+.nextbutton {
+  background-color: #0077ed;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 980px;
+  border: none;
+  color: #fff;
+}
+
+.quiz_complete_card {
+  width: clamp(18.75rem, 1.9231rem + 67.3077vw, 62.5rem);
+  background-color: #161618;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+.quiz_complete_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.quiz_complete_card h3 {
+  color: #0077ed;
+  margin-left: 10px;
+}
+.quiz_complete_questions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+.quiz_complete_questions li {
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.restart_quiz_button {
+  background-color: #0077ed;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 980px;
+  border: none;
+  color: #fff;
+  margin-top: 24px;
+}
