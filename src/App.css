@@ -43,7 +43,7 @@
 
 /* Chrome, Edge, and Safari */
 .category_list::-webkit-scrollbar {
-  width: 14px;
+  width: 8px;
 }
 
 .category_list::-webkit-scrollbar-track {
@@ -51,6 +51,11 @@
   border-top-right-radius: 14px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+.category_list::-webkit-scrollbar-thumb {
+  background-color: #3d3d3d;
+  border-radius: 8px;
+  /* border: 0px none #ffffff; */
 }
 /* ----------------------------css loader ------------------------- */
 .custom-loader {
